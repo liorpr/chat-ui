@@ -1,0 +1,21 @@
+
+$primary-color: #0082DD;
+$header-height: 150;
+$form-height: 206;
+
+@import './components/header/header';
+@import './components/new-message/new-message';
+@import './components/avatar/avatar';
+@import './components/message/message';
+@import './components/message-list/message-list';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+

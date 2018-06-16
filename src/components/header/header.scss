@@ -1,0 +1,16 @@
+
+.spotim-header {
+  text-align: center;
+  background-color: $primary-color;
+  height: calc(#{$header-height} * 1px);
+  padding: 20px;
+  color: white;
+  .spotim-title {
+    font-size: 1.5em;
+  }
+  
+  
+  .image {
+    margin: 20px auto 0 auto;
+  }
+}
