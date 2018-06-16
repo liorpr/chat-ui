@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<li
+  className="message-container"
+>
+  <img
+    alt="avatar"
+    className="avatar-img"
+    src="https://spotim-demo-chat-server.herokuapp.com/avatars/avatar.png"
+  />
+  <div
+    className="content"
+  >
+    <p
+      className="box"
+    >
+      message
+    </p>
+    <div
+      className="username"
+    >
+      username
+    </div>
+  </div>
+</li>
+`;

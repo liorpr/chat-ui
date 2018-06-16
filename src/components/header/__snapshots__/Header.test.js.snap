@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="ui container spotim-header"
+>
+  <div
+    className="spotim-title"
+  >
+    Welcome to the Spot.IM Chat app
+  </div>
+  <div>
+    <div>
+      <img
+        alt={undefined}
+        className="ui tiny image"
+        height={undefined}
+        src="spotim-logo.jpg"
+        width={undefined}
+      />
+    </div>
+  </div>
+</div>
+`;
