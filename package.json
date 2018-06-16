@@ -38,6 +38,7 @@
     "react-dev-utils": "^4.2.1",
     "react-dom": "^16.1.1",
     "react-redux": "^5.0.6",
+    "react-test-renderer": "^16.4.1",
     "redux": "^3.7.2",
     "sass-loader": "^6.0.6",
     "semantic-ui-css": "^2.2.12",
@@ -56,7 +57,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom",
+    "test": "jest",
     "submit": "node scripts/submit"
   },
   "jest": {
@@ -64,7 +65,8 @@
       "src/**/*.{js,jsx,mjs}"
     ],
     "setupFiles": [
-      "<rootDir>/config/polyfills.js"
+      "<rootDir>/config/polyfills.js",
+      "<rootDir>/src/setupTests.js"
     ],
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}",
