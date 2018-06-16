@@ -1,11 +1,18 @@
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { getRandomAvatar } from '../../services/utils';
 import StorageService from '../../services/storage';
 import Avatar from '../avatar/Avatar';
 
 export default class NewMessage extends Component {
+  
+  static propTypes = {
+    username: PropTypes.string,
+    onUsernameChange: PropTypes.func,
+    emitNewMessage: PropTypes.func
+  };
   
   state = {
     message: '',
@@ -45,7 +52,7 @@ export default class NewMessage extends Component {
   }
   
   render() {
-    const { avatar } = this.state;
+    const { avatar, message } = this.state;
     const { username, onUsernameChange } = this.props;
     const isSubmitDisabled = this.isSubmitDisabled();
     return (
@@ -67,7 +74,7 @@ export default class NewMessage extends Component {
           <textarea
             className="message"
             placeholder="your message goes here..."
-            value={this.state.message}
+            value={message}
             onChange={this.onMessageChange}
           />
         </div>
